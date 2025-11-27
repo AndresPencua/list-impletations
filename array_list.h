@@ -2,8 +2,8 @@
 #define ARRAY_LIST_H
 
 typedef struct{
-	void **data //Aqui se almacenan los elementos genericos
-		int size; //Numeros de elementos que tiene la lista almacenados
+	void **data; //Aqui se almacenan los elementos genericos
+	int size; //Numeros de elementos que tiene la lista almacenados
 	int capacity; //Capacidad maxima de objetos que pueden almacenar la lista
 	int element_size; //Tamano en bytes de cada elemento
 }ArrayList;
@@ -12,7 +12,7 @@ typedef struct{
 //Constructor -> Inicializa variables enn sus valores por defecto y pide memoria para almacenarse
 //Constructor -> Realiza las liberaciones de memoria para que el 0S pueda volver a usarla
 
-ArrayList* arraylist_create(int initial_capacity, int element_size;
+ArrayList* arraylist_create(int initial_capacity, int element_size);
 void arraylist_destroy(ArrayList *list);
 
 //Operaciones basicas que toda lista debe llevar
