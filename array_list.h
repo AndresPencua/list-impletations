@@ -18,8 +18,8 @@ void arraylist_destroy(ArrayList *list);
 //Operaciones basicas que toda lista debe llevar
 void arraylist_add (ArrayList *list,void *element);//Agrega un elemento final de la lista
 void arraylist_insert(ArrayList *list, void *element,int index);//Agega un elemento a la posicion deseada(index)
-void arraylist_get(ArrayList *list,int index);//Obtenemos el elemento de la posicion index de la lista
-void arraylist_remove(ArrayList *list,int index);//Se quita el elemento en la posicion index de la lista
+void *arraylist_get(ArrayList *list,int index);//Obtenemos el elemento de la posicion index de la lista
+int arraylist_remove(ArrayList *list,int index);//Se quita el elemento en la posicion index de la lista
 void arraylist_clear(ArrayList *list);//Se borran tods los elementos de la lista
 
 //Funciones usadas para manipular los arreglos dinamicos
