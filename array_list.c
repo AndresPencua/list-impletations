@@ -33,6 +33,26 @@ ArrayList *list = (ArrayList*)malloc(sizeof(ArrayList));
 	list-> size = 0;
 	list_capacity = initial_capacity;
 	list->element_size = element_size;
+}
+	
+void arraylist_destroy(ArrayList *list){
+	if(!list) return;
+	arraylist_clear(list);
+	free(list->data);
+	free(list);
+}
+	
+void arraylist_clear(ArrayList *list){
+	if(!list) return;
+	for(int i=0; i<list->size; i++){
+		free(list->data[i]);
+		list->data[i] = NULL;
+	}
+	list->size = 0;
+}	
+	
+	
+	
 	
 	
 	
