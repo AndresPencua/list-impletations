@@ -18,7 +18,7 @@ int arraylist_remove(ArrayList *list, int index);
 void arraylist_clear(ArrayList *list);
 
 void arraylist_ensure_capacity(ArrayList *list, int min_capacity);
-void arraylist_trim_clone(ArrayList *list); // No la usas, pero la dejo porque estaba declarada
+void arraylist_trim_clone(ArrayList *list); 
 ArrayList* arraylist_clone(ArrayList *list);
 
 #endif

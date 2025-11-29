@@ -28,7 +28,7 @@ ArrayList* arraylist_create(int initial_capacity, int element_size) {
 	list->capacity = initial_capacity;
 	list->element_size = element_size;
 	
-	return list;   // ? NECESARIO
+	return list;   
 }
 
 void arraylist_destroy(ArrayList *list) {
@@ -121,5 +121,5 @@ void arraylist_clear(ArrayList *list) {
 }
 
 ArrayList* arraylist_clone(ArrayList *list) {
-	return NULL; // No pediste implementación
+	return NULL; 
 }
